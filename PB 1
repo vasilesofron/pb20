@@ -1,0 +1,21 @@
+"""ex 658, pbinfo"""
+def ex_0658(n, m):
+    matrice = []
+    s = 0
+    for i in range(n):
+        a = []
+        for j in range(m):
+            a.append(int(input()))
+        matrice.append(a)
+
+    for i in range(n):
+        for j in range(m):
+            s +=  matrice[i][j]
+        print (s)
+        s = 0
+
+
+if __name__ == "__main__":
+    n = int(input())
+    m = int(input())
+    ex_0658(n, m)
