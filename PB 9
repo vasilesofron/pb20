@@ -1,0 +1,19 @@
+#ex 371, pbinfo
+def sumacif(a):
+    suma = 0
+    while a:
+        suma = suma + a % 10
+        a = a // 10
+    return suma
+
+s = 0
+n = int(input())
+for i in range (0, n):
+    if i == 0:
+        a = int(input())
+    if i > 0:
+        b = int(input())
+        if sumacif(a) == sumacif(b):
+            s += 1
+        a = b
+print (s)
