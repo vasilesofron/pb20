@@ -1,0 +1,11 @@
+"""ex 51, pbinfo"""
+
+if __name__ == "__main__":
+    ok = 1
+    s = 0
+    while ok:
+        n = int(input())
+        if n == 0:
+            break
+        s += n
+    print (s)
