@@ -1,0 +1,16 @@
+"""ex 2687, pbinfo"""
+def prima_cif(a):
+    while a > 9:
+        a = a // 10
+    return a
+
+n = int(input())
+for i in range (0, n):
+    if i == 0:
+        a = int(input())
+    if i > 0:
+        b = int(input())
+        if a % 10 == prima_cif(b):
+            print (a, b)
+        a = b
+
