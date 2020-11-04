@@ -1,0 +1,16 @@
+"""ex 1261, pbinfo"""
+k = 0
+def ex_1261(r):
+    global k
+    if r % 2 == 0 and r != 0:
+         k += 1
+ok = 1
+
+
+if __name__ == "__main__":
+    while ok:
+        r = int(input())
+        ex_1261(r)
+        if r == 0:
+            break
+    print (k)
