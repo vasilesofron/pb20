@@ -1,4 +1,6 @@
-""""Se citesc numere de la tastatură până la apariția lui zero. Să se determine câte dintre ele erau pare.
+""""
+
+Se citesc numere de la tastatură până la apariția lui zero. Să se determine câte dintre ele erau pare.
 Programul citește de la tastatură numere întregi. Citirea se încheie la introducerea valorii 0, care nu se va număra.
 Programul afișează pe ecran numărul K, reprezentând numărul de numere pare citite.
 
