@@ -1,0 +1,17 @@
+#ex1411 pbinfo
+def prima_cif(a):
+    while a > 9:
+        a = a // 10
+    return a
+
+ok = 1
+s = 0
+while ok:
+    a = int(input())
+    b = int(input())
+    if (a == 0 and b == 0):
+        break
+    else:
+        if(prima_cif(a) == prima_cif(b)):
+            s += 1
+print (s)
