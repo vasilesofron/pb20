@@ -25,6 +25,7 @@ else:
     print("NU EXISTA")
     
 """"
+pb 280
 pe pbinfo nu primeste punctaj de 100 si nu stiu unde am gresit
 pe toate exemplele pe care le-am luat eu a mers bine
 daca puteti va rog sa va uitati si dumneavoastra sa vedeti unde am gresit
