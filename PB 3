@@ -1,0 +1,46 @@
+"""ex 2663, pbinfo"""
+from math import sqrt
+def nr_div(n):
+    contor_div = 0
+    for i in range(1, int(sqrt(n)+1)):
+        if(n % i == 0):
+            if (n / i == i):
+                contor_div += 1
+            else:
+                contor_div += 2
+    return contor_div
+
+def next_nr_div(n):
+    x = nr_div(n)
+    ok = 1
+    next_div = n + 1
+    while ok:
+        if nr_div(next_div) == x:
+            solutie = next_div
+            ok = 0
+        next_div += 1
+    return solutie
+
+def prev_nr_div(n):
+    y = nr_div(n)
+    ok = 1
+    prev_div = n - 1
+    while ok:
+        if nr_div(prev_div) == y:
+            solutie2 = prev_div
+            ok = 0
+        prev_div += -1
+    if ok == 1:
+        return -1
+    else:
+        return solutie2
+
+def ex_2663(n):
+    print(nr_div(n))
+    print(next_nr_div(n))
+    print(prev_nr_div(n))
+
+
+if __name__ == "__main__":
+    n=int(input())
+    ex_2663(n)
