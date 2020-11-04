@@ -1,0 +1,32 @@
+def pal(a):
+    inv = 0
+    c = a
+    while a != 0:
+        inv = inv * 10 + a % 10
+        a = a // 10
+    if inv == c:
+        return 9
+
+n = 1
+va = -1
+s = 0
+ok = 0
+while n:
+    a = int(input())
+    if a == 0:
+        break
+    if a > va and pal(a) == 9:
+        s = 0
+        va = a
+        ok = 1
+if ok:
+    print(va, s)
+else:
+    print("NU EXISTA")
+    
+""""
+pe pbinfo nu primeste punctaj de 100 si nu stiu unde am gresit
+pe toate exemplele pe care le-am luat eu a mers bine
+daca puteti va rog sa va uitati si dumneavoastra sa vedeti unde am gresit
+multumesc
+"""
