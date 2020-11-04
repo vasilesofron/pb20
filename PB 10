@@ -1,0 +1,15 @@
+#1636 pbinfo
+n = int(input())
+p = 1
+for i in range(0, n):
+    a = int(input())
+    p = p * a
+s = 0
+uc = 0
+while uc==0:
+    if p % 10 == 0:
+        s += 1
+    if p % 10 != 0:
+        uc = p % 10
+    p = p // 10
+print(s, uc)
